@@ -1,0 +1,50 @@
+/* Default styles */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --button-bg: #f0f0f0;
+    --button-color: #333333;
+    --transition: 0.3s;
+  }
+  
+  /* Dark theme overrides */
+  [data-theme="dark"] {
+    --bg-color: #1e1e1e;
+    --text-color: #ffffff;
+    --button-bg: #333333;
+    --button-color: #f0f0f0;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color var(--transition), color var(--transition);
+  }
+  
+  button {
+    background-color: var(--button-bg);
+    color: var(--button-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color var(--transition), color var(--transition);
+  }
+  
+  button:focus {
+    outline: 2px solid var(--text-color);
+  }
+  
+  h1 {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 18px;
+  }
+  
